@@ -5,7 +5,7 @@
  *
  * @website http://formvalidator.net/
  * @license Dual licensed under the MIT or GPL Version 2 licenses
- * @version 2.2.43
+ * @version 2.2.43 hostess version
  */
 (function ($) {
 
@@ -552,7 +552,7 @@
    * Short hand function that makes the validation setup require less code
    * @param conf
    */
-  $.validate = function (conf) {
+  $.__validate = function (conf) {
 
     var defaultConf = $.extend($.formUtils.defaultConfig(), {
       form: 'form',
